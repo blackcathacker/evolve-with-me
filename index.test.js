@@ -15,19 +15,19 @@ describe('getNeighbors', () => {
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     ]
     it('finds neighbors test case 1', () => {
-        expect(getNeighbors(testCase, 0, 0)).toEqual([0, 0, 0])
+        expect(getNeighbors(testCase, 0, 0)).toEqual([])
     })
     it('finds neighbors test case 2', () => {
-        expect(getNeighbors(testCase, 9, 9)).toEqual([1, 0, 0])
+        expect(getNeighbors(testCase, 9, 9)).toEqual([1])
     })
     it('finds neighbors test case 3', () => {
-        expect(getNeighbors(testCase, 9, 0)).toEqual([2, 0, 2])
+        expect(getNeighbors(testCase, 9, 0)).toEqual([2, 2])
     })
     it('finds neighbors test case 4', () => {
-        expect(getNeighbors(testCase, 3, 0)).toEqual([2, 0, 0, 0, 1])
+        expect(getNeighbors(testCase, 3, 0)).toEqual([2, 1])
     })
     it('finds neighbors test case 4', () => {
-        expect(getNeighbors(testCase, 5, 2)).toEqual([1, 3, 1, 0, 0, 1, 3, 0])
+        expect(getNeighbors(testCase, 5, 2)).toEqual([1, 3, 1, 1, 3])
     })
 })
 
