@@ -1,0 +1,4 @@
+
+* Given the time constraints I did simplify some things that would require extra refactoring ir new requirements were introduced. For instance I built out the getNeighbors method assuming we didn't need to know anything about their positioning. 
+
+* I also enjoy functional style programming more than iterative lately, but the getNeighbors made heavy use of map and I'm not sure if it wouldn't have been cleaner to do it iteratively, and I briefly attempted this but it didn't seem significantly cleaner or more readable, but I didn't take the time to go all the way through that so I'm not completely sure.

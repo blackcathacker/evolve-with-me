@@ -1,5 +1,5 @@
 
-const { evolve, getNeighbors } = require('./index')
+const { evolve, getNeighbors } = require('./lib')
 
 describe('getNeighbors', () => {
     const testCase = [
